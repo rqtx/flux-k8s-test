@@ -43,5 +43,6 @@ git push
 ```bash
 rm -r clusters
 git add -A && git commit -m "Cleanning up"
+git push
 kind delete cluster
 ```
