@@ -46,3 +46,7 @@ git add -A && git commit -m "Cleanning up"
 git push
 kind delete cluster
 ```
+
+## Reference
+
+- https://fluxcd.io/docs/get-started/
