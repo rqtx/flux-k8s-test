@@ -34,7 +34,9 @@ flux create kustomization podinfo \
   --prune=true \
   --interval=5m \
   --export > ./clusters/cluster0/podinfo-kustomization.yaml
-  ```
+git add -A && git commit -m "Add podinfo Kustomization"
+git push
+```
 
 ## Cleanup
 
