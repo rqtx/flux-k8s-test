@@ -6,7 +6,7 @@
 kind create cluster --config kind-config.yml
 ```
 
-## Bootstrap flux
+## Install Flux onto your cluster
 
 ```bash
 flux bootstrap git --url=ssh://git@github.com/rqtx/flux-k8s-test.git --context=kind-kind --path=clusters/cluster0 --private-key-file=PRIVATE_KEY_FILE --password=PRIVATE_KEY_PASSWORD
@@ -24,7 +24,7 @@ git add -A && git commit -m "Add podinfo GitRepository"
 git push
 ```
 
-## Add podinfo repository to Flux
+## Deploy podinfo application
 
 ```bash
 flux create kustomization podinfo \
@@ -38,7 +38,7 @@ git add -A && git commit -m "Add podinfo Kustomization"
 git push
 ```
 
-## Cleanup
+## Cleanning up
 
 ```bash
 rm -r clusters
